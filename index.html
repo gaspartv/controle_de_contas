@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento mensal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/forAll.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Janeiro</li>
+                <li>Fevereiro</li>
+                <li>Março</li>
+                <li>Abril</li>
+                <li>Maio</li>
+                <li>Junho</li>
+                <li>Julho</li>
+                <li>Agosto</li>
+                <li>Setembro</li>
+                <li>Outubro</li>
+                <li>Novembro</li>
+                <li>Dezembro</li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <div class="infos">
+        <div class="saldo"><p><span class="negrito">Saldo:</span> R$<span id="saldo-total">100,00</span></p></div>
+
+        <div><p><span class="negrito">Gastos hoje:</span> R$<span>10,00</span></p></div>
+    </div>
+    <div class="infos-geral">
+        <div><p class="negrito">Mês atual</p>
+            <ul>
+                <li><span class="negrito">Receitas:</span> R$<span>400,00</span></li>
+                <li><span class="negrito">Despesas:</span> R$<span>40,00</span></li>
+            </ul>
+        </div>
+
+        <div><p class="negrito">Visão geral</p>
+            <ul>
+                <li><span class="negrito">Receitas:</span> R$<span>400,00</span></li>
+                <li><span class="negrito">Despesas:</span> R$<span>40,00</span></li>
+            </ul>
+        </div>
+
+        <div><p class="negrito">Contas <a class="editar" href="/">adicionar conta</a></p>
+            <ul>
+                <li><span class="negrito">NuBank:</span> R$<span>40,00</span> <a class="editar" href="/">editar</a></li>
+                <li><span class="negrito">Caixa Econômica:</span> R$<span>40,00</span> <a class="editar" href="/">editar</a></li>
+                <li><span class="negrito">C6 Bank:</span> R$<span>40,00</span> <a class="editar" href="/">editar</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hs">
+    <h1 class="h1Table">Mês <span>MAIO</span></h1>
+    <bu class="h3Table" onclick="addDivida()">Adicionar Divida</bu>
+    </div>
+    <div class="table">
+            <div id="table"></div>
+    </div>
+</main>
+
+<script src="js/contas.js"></script>
+</body>
+</html>
